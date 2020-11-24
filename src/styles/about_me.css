@@ -1,0 +1,91 @@
+.about_me {
+	float: left;
+	shape-outside: polygon(0 0, 0 90%, 100% 100%, 100% 0);
+	clip-path: polygon(0 0, 0 90%, 100% 100%, 100% 0);
+	background-color: #ddd;
+	position: relative;
+	z-index: 15;
+	top: -80px;
+	padding: 90px 0;
+}
+
+.about_me_list {
+	width: 90%;
+	margin: auto;
+	color: #333;
+}
+
+.about_me_list li {
+	width: 60%;
+	margin-bottom: 60px;
+	padding: 10px;
+}
+
+.link_to_portfolio {
+	color: #874d00;
+	font-weight: 600;
+}
+
+.about_me_list li hr {
+	background-color: #874d00;
+	color: #874d00;
+	height: 2px;
+	border: none;
+}
+
+.second_paragraph {
+	margin-left: 40%;
+}
+
+.about_me_list h2 {
+	font-size: 2.5em;
+	width: 65%;
+	font-family: Oswald, sans-serif;
+	color: #1a1b1f;
+}
+
+.second_paragraph h2 {
+	margin-left: 35%;
+	text-align: right;
+}
+
+.about_me_list p {
+	font-size: 1.2em;
+	margin-top: 20px;
+	font-weight: 600;
+	line-height: 2;
+	font-family: Karla, sans-serif;
+	color: #1a1b1f;
+}
+
+
+
+@media (max-width: 1024px) {
+	.about_me_list p {
+		font-size: 0.9em;
+	}
+}
+
+@media (max-width: 768px) {
+	.about_me_list h2 {
+		font-size: 1.8em;
+	}
+
+	.about_me_list p {
+		font-size: 0.7em;
+	}
+
+	.about_me_list li {
+		margin-bottom: 20px;
+	}
+}
+
+@media (max-width: 640px) {
+	.about_me_list h2 {
+		font-size: 1.4em;
+	}
+
+	.about_me_list p {
+		font-size: 0.5em;
+	}
+}

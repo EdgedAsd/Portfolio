@@ -1,0 +1,163 @@
+footer.main_footer {
+	width: 100%;
+	float: left;
+	background-color: #1a1b1f;
+	position: relative;
+	top: -500px;
+	padding: 120px 0;
+}
+
+.footer_list {
+	width: 80%;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+.footer_list_item {
+	font-family: Karla, sans-serif;
+	color: #ddd;
+}
+
+.footer_list_item.ps_item {
+	width: 30%;
+}
+
+.footer_list_item.navigation_item {
+	width: 25%;
+}
+
+.footer_list_item.contact_item {
+	width: 25%;
+}
+
+.footer_list_title {
+	color: #ddd;
+	font-size: 1.7em;
+	font-family: Oswald, sans-serif;
+	margin-bottom: 40px;
+}
+
+.link_to_cv {
+	background-color: #faaf52;
+	padding: 10px 5px;
+	border-radius: 20px;
+	display: block;
+	margin-top: 40px;
+	width: 30%;
+	color: #fff;
+	text-align: center;
+	line-height: 20px;
+	position: relative;
+	overflow: hidden;
+}
+
+.link_to_cv::before {
+	content: "";
+	width: 30px;
+	height: 100%;
+	left: -50px;
+	position: absolute;
+	top: 0;
+	background: linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,1));
+	transform: skewX(-30deg);
+}
+
+.link_to_cv:hover::before {
+	animation: bright .7s ease-in;
+}
+
+.footer_navigation_item {
+	margin-bottom: 20px;
+}
+
+.footer_navigation_link {
+	color: #ddd;
+	transition: .2s;
+}
+
+.footer_navigation_link:hover {
+	color: #faaf52;
+}
+
+.footer_contacts_item {
+	margin-bottom: 20px;
+}
+
+.footer_contacts_item i {
+	display: block;
+	float: left;
+	margin-right: 10px;
+}
+
+
+@media (max-width: 1200px) {
+	.footer_list_item.ps_item {
+		width: 35%;
+	}
+
+	.footer_list_item.navigation_item {
+		width: 20%;
+	}
+
+	.footer_list_item.contact_item {
+		width: 30%;
+	}
+}
+
+@media (max-width: 1024px) {
+	.footer_list {
+		font-size: 0.9em;
+	}
+
+	.footer_list_item.navigation_item {
+		width: 15%;
+	}
+
+	.footer_list_item.contact_item {
+		width: 35%;
+	}
+
+	.link_to_cv {
+		padding: 10px;
+	}
+}
+
+@media (max-width: 768px) {
+	.footer_list {
+		font-size: 0.6em;
+	}
+
+	.link_to_cv {
+		padding: 5px 10px;
+	}
+}
+
+@media (max-width: 640px) {
+	.footer_list {
+		width: 90%;
+	}
+
+	.footer_list_item.contact_item {
+		width: 38%;
+	}
+}
+
+@media (max-width: 440px) {
+	footer.main_footer {
+		padding-bottom: 50px;
+	}
+
+	.footer_list {
+		display: block;
+	}
+
+	.footer_list_item {
+		width: 100% !important;
+		margin-top: 30px;
+	}
+
+	.footer_list_title {
+		margin-bottom: 15px;
+	}
+}

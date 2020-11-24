@@ -1,0 +1,41 @@
+.portfolio_btn {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	font-size: 32px;
+	outline: none;
+	border: none;
+	background-color: transparent;
+	cursor: pointer;
+	transition: .2s;
+}
+
+.left_portfolio_btn {
+	left: 2%;
+}
+
+.right_portfolio_btn {
+	right: 2%;
+}
+
+@media (max-width: 768px) {
+	.portfolio_btn {
+		font-size: 20px;
+	}
+}
+
+@media (max-width: 640px) {
+	.left_portfolio_btn {
+		left: 1%;
+	}
+
+	.right_portfolio_btn {
+		right: 1%;
+	}
+}
+
+@media (max-width: 440px) {
+	.portfolio_btn {
+		font-size: 10px;
+	}
+}

@@ -1,0 +1,52 @@
+@font-face {
+	font-family: "Oswald";
+	src: url("fonts/Oswald.ttf");
+}
+
+@font-face {
+	font-family: "Karla";
+	src: url("fonts/Karla.ttf");
+}
+
+
+@keyframes bright {
+	from {left: -50px;}
+	to {left: calc(100% + 20px);}
+}
+
+
+
+* {
+	margin: 0;	
+	padding: 0;	
+}
+
+html,body {
+	height: 100%;
+}
+
+ul, ol {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+main {
+	width: 100%;
+	height: 100%;
+	background-color: #fff;
+}
+
+.light_wall {
+	width: 100%;
+	height: 100%;
+	background-color: rgba(255,255,255,.4);
+}
+
+.dark_wall {
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,.4);
+}

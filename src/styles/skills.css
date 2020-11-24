@@ -1,0 +1,135 @@
+.skills {
+	font-family: Oswald;
+	float: left;
+	shape-outside: polygon(0 0, 0 90%, 100% 100%, 100% 0);
+	clip-path: polygon(0 0, 0 90%, 100% 100%, 100% 0);
+	position: relative;
+	width: 100%;
+	top: -250px;
+	z-index: 10;
+	padding: 120px 0;
+	background-color: #1a1b1f;
+}
+
+.my_skills_title {
+	font-size: 3em;
+	text-align: center;
+	width: 60%;
+	margin: auto;
+	color: #ddd;
+}
+
+.skills_list {
+	width: 90vw;
+	margin: 60px auto 0 auto;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.skills_list_item {
+	width: 19%;
+	margin-bottom: 50px;
+}
+
+.skills_list_item h6 {
+	text-align: center;
+	font-size: 2em;
+	margin-bottom: 10px;
+	color: #ddd;
+}
+
+.skill_image {
+	width: 14vw;
+	height: 14vw;
+	margin: auto;
+}
+
+#html .skill_image {
+	background: url('../images/html.png') center no-repeat;
+	background-size: 70% 80%;
+}
+
+#css .skill_image {
+	background: url('../images/css.png') center no-repeat;
+	background-size: 70% 80%;
+}
+
+#js .skill_image {
+	background: url('../images/js.png') center no-repeat;
+	background-size: 90% 95%;
+}
+
+#react .skill_image {
+	background: url('../images/reactjs.png') center no-repeat;
+	background-size: 80% 80%;
+}
+
+#babel .skill_image {
+	background: url('../images/babel.png') center no-repeat;
+	background-size: 100% 60%;
+}
+
+#python .skill_image {
+	background: url('../images/python.png') center no-repeat;
+	background-size: 80% 80%;
+}
+
+#jquery .skill_image {
+	background: url('../images/jquery.png') center no-repeat;
+	background-size: 80% 80%;
+}
+
+#sass .skill_image {
+	background: url('../images/sass.png') center no-repeat;
+	background-size: 80% 80%;
+}
+
+#git .skill_image {
+	background: url('../images/git.png') center no-repeat;
+	background-size: 80% 65%;
+}
+
+#photoshop .skill_image {
+	background: url('../images/photoshop.jpg') center no-repeat;
+	background-size: 80% 80%;
+}
+
+
+@media (max-width: 768px) {
+	.skills {
+		padding-top: 150px;
+	}
+}
+
+@media (max-width: 640px) {
+	.skills {
+		padding-bottom: 100px;
+	}
+
+	.my_skills_title {
+		font-size: 2em;
+	}
+
+	.skills_list_item h6 {
+		font-size: 1.2em;
+	}
+}
+
+@media (max-width: 440px) {
+	.skills {
+		padding-bottom: 50px;
+	}
+
+	.skills_list {
+		margin-top: 30px;
+	}
+
+	.my_skills_title {
+		font-size: 1.5em;
+	}
+
+	.skills_list_item h6 {
+		font-size: .9em;
+	}
+}
