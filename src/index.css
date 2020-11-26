@@ -1,11 +1,13 @@
 @font-face {
 	font-family: "Oswald";
 	src: url("fonts/Oswald.ttf");
+	font-display: optional;
 }
 
 @font-face {
 	font-family: "Karla";
 	src: url("fonts/Karla.ttf");
+	font-display: optional;
 }
 
 
@@ -13,7 +15,6 @@
 	from {left: -50px;}
 	to {left: calc(100% + 20px);}
 }
-
 
 
 * {
