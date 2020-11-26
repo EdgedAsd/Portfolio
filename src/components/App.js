@@ -6,6 +6,8 @@ import Skills from './Skills';
 import Portfolio from './Portfolio';
 import Footer from './Footer';
 
+import sites from './sites.js';
+
 
 function App() {
 
@@ -22,12 +24,10 @@ function App() {
 			<Intro navigation={navigation_names} />
 			<AboutMeSection />
 			<Skills />
-			<Portfolio />
+			<Portfolio sites={sites} />
 			<Footer navigation={navigation_names} />
 		</div>
 	);
 }
 
 export default App;
-
-

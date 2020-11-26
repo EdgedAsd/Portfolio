@@ -3,8 +3,6 @@ import React from 'react';
 import PortfolioItem from './PortfolioItem';
 import PortfolioBtn from './PortfolioBtn';
 
-import sites from '../sites.js';
-
 import '../styles/portfolio_slider.css';
 
 class PortfolioSlider extends React.Component {
@@ -14,7 +12,7 @@ class PortfolioSlider extends React.Component {
 
 		this.state = {
 			blockslide: false,
-			sites: sites,
+			sites: this.props.sites,
 			opacity: 1
 		}
 
@@ -30,7 +28,7 @@ class PortfolioSlider extends React.Component {
 		(async () => {
 			let sites_with_bg = [];
 			for (let item in this.state.sites) {
-				let image_src = await import(`../${sites[item].image}`).then((result) => result.default);
+				let image_src = await import(`../${this.props.sites[item].image}`).then((result) => result.default);
 				let new_site = this.state.sites[item];
 				new_site['background'] = image_src;
 				sites_with_bg.push(new_site);
@@ -116,7 +114,7 @@ class PortfolioSlider extends React.Component {
 					)}
 				</ul>
 				<PortfolioBtn side='right' click={this.clickRight}/>
-				<a href="" className="link_portfolio_git">View this page on gitHub</a>
+				<a href="https://github.com/EdgedAsd/Portfolio" className="link_portfolio_git">View this page on gitHub</a>
 			</div>
 		)
 	}
