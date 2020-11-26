@@ -3,10 +3,12 @@ import React from 'react';
 import '../styles/portfolio_item.css';
 
 function PortFolioItem(props) {
-
 	return (
 		<li className='portfolio_item' id={'item_'+props.id} style={{'opacity': String(props.opacity)}}>
-			<div className="portfolio_item_image" style={{'backgroundImage': `url(${props.background})`, 'backgroundSize': 'cover'}}></div>
+			<picture>
+				<source srcSet={props.background} type='image/webp' />
+				<img srcSet={props.background} alt="" className="portfolio_item_image" />
+			</picture>
 			<a href={props.href} className='site_link' target="_blank" rel="noopener noreferrer">
 				<h4 className='site_name'>{props.name}</h4>
 			</a>
