@@ -40,59 +40,22 @@
 }
 
 .skill_image {
-	width: 14vw;
-	height: 14vw;
-	margin: auto;
-}
-
-#html .skill_image {
-	background: url('../images/html.png') center no-repeat;
-	background-size: 70% 80%;
-}
-
-#css .skill_image {
-	background: url('../images/css.png') center no-repeat;
-	background-size: 70% 80%;
-}
-
-#js .skill_image {
-	background: url('../images/js.png') center no-repeat;
-	background-size: 90% 95%;
+	display: block;
+	width: 60%;
+	height: 60%;
+	margin: 20% auto;
 }
 
 #react .skill_image {
-	background: url('../images/reactjs.png') center no-repeat;
-	background-size: 80% 80%;
-}
-
-#babel .skill_image {
-	background: url('../images/babel.png') center no-repeat;
-	background-size: 100% 60%;
-}
-
-#python .skill_image {
-	background: url('../images/python.png') center no-repeat;
-	background-size: 80% 80%;
+	width: 75%;
+	height: 58%;
+	margin: 21% auto;
 }
 
 #jquery .skill_image {
-	background: url('../images/jquery.png') center no-repeat;
-	background-size: 80% 80%;
-}
-
-#sass .skill_image {
-	background: url('../images/sass.png') center no-repeat;
-	background-size: 80% 80%;
-}
-
-#git .skill_image {
-	background: url('../images/git.png') center no-repeat;
-	background-size: 80% 65%;
-}
-
-#photoshop .skill_image {
-	background: url('../images/photoshop.jpg') center no-repeat;
-	background-size: 80% 80%;
+	width: 75%;
+	height: 58%;
+	margin: 21% auto;
 }
 
 
